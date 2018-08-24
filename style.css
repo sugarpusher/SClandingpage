@@ -42,14 +42,14 @@
     /* height: 456px; */
     background-color: #e2ebf2;
     background-image: url(images/header_bg.png);
-    background-size: contain;
-    background-position: right bottom;
+    background-size: auto 280px;
+    background-position: -262px -16px;
     background-repeat: no-repeat;
     padding-bottom: 27px;
   }
 
   .navbar {
-    padding: 16px 1rem 9px;
+    padding: 25px 34px 9px;
   }
 
   .navbar-nav {
@@ -108,7 +108,7 @@
   }
 
   .section {
-    padding: 17px 35px 13px;
+    padding: 7px 50px 13px;
   }
 
   #body-wrap .section {
@@ -184,6 +184,10 @@
   
   /*Small devices (landscape phones, 576px and up)*/
   @media (min-width: 576px) {
+    #header {
+      background-size: contain;
+      background-position: right bottom;
+    }
     .container {
       padding-right: 15px;
       padding-left: 15px;
@@ -195,11 +199,12 @@
       max-width: 80px;
     }
     #header h1 {
+      font-family: "Montserrat-ExtraBold";
       font-size: 88px;
       line-height: 82px;
     }
     .section {
-      padding: 28px calc(10vw - 15px) 29px;
+      padding: 18px 10vw 29px;
     }
     #body-wrap .section:first-child {
       padding-top: 43px;
@@ -210,6 +215,7 @@
       line-height: 32px;
     }
     #body-wrap .section a {
+      font-family: "Montserrat-SemiBold";
       font-size: 28px;
       line-height: 36px;
     }
@@ -277,7 +283,13 @@
   /*Large devices (desktops, 992px and up)*/
   @media (min-width: 992px) {
     .navbar {
-      padding-bottom: 12px;
+      padding: 25px 25px 15px;
+    }
+    .find-us {
+      display: none;
+    }
+    .nav-link {
+      padding-top: 5px;
     }
     /* .navbar {
       padding: 30px 1rem 25px;
